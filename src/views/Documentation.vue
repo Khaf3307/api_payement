@@ -5,6 +5,9 @@
       <router-view></router-view>
       <div class="projects">
     <h1 class="subheading grey--text">Documentation</h1>
+    <p>
+      La documentation est en cours de construction et sera prêt sous peut pour de amples information sur l'utilisations de l'api se referer au README !
+    </p>
     
   </div>
     </v-content>
