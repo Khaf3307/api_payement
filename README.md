@@ -1,4 +1,6 @@
 # api_payement
+![api](https://user-images.githubusercontent.com/81360602/182561175-ac661e43-2550-44fa-b8f2-9804cf1b1990.PNG)
+
 #### INTRODUCTION
 Vous ne savez pas encore quelle solution choisir pour le paiement de votre e-commerce ? Il existe de nombreuses solutions plus ou moins adaptées à votre situation. En effet, pour démarrer, une plateforme e-commerce souhaitera limiter le coût de cette fonctionnalité pour privilégier son chiffre d’affaires. Plus elle grandit, plus cette plateforme aura besoin de fonctionnalités variées comme le paiement à l’international ou les factures automatisées.
 Des solutions simples d’utilisation, transparentes et polyvalentes, il y en a beaucoup. Au cœur de la problématique du paiement en ligne, on retrouve la sécurité, la fluidité et la simplicité. Nous vous proposons une API pour la gestion des paiements. Une API, ou interface de programmation d'application, est un ensemble de définitions et de protocoles qui facilite la création et l'intégration de logiciels d'applications.
