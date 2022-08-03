@@ -2,12 +2,12 @@
   <v-form>
     <v-container>
       <h1 style="align : center">Creation de Compte</h1>
-      
-      <v-col
+      <v-row>
+        <v-col
           cols="12"
           sm="10"
-        >
-          <v-text-field
+          >
+        <v-text-field
             v-model="login"
             label="Login"
             outlined
@@ -47,7 +47,7 @@
             @click:append="show1 = !show1"
           ></v-text-field>
         </v-col>
-      </v-row>
+    </v-row>
     </v-container>
   </v-form>
 </template>
