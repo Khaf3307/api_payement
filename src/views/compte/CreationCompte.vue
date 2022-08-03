@@ -5,7 +5,7 @@
       
       <v-col
           cols="12"
-          sm="6"
+          sm="10"
         >
           <v-text-field
             v-model="login"
