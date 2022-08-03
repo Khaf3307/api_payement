@@ -2,31 +2,8 @@
   <v-form>
     <v-container>
       <h1 style="align : center">Creation de Compte</h1>
-      <v-row>
-        <v-col
-          cols="12"
-          sm="6"
-        >
-          <v-text-field
-            v-model="first"
-            label="Nom"
-            outlined
-            shaped
-          ></v-text-field>
-        </v-col>
-
-        <v-col
-          cols="12"
-          sm="6"
-        >
-          <v-text-field
-            v-model="last"
-            label="Prenom"
-            outlined
-            shaped
-          ></v-text-field>
-        </v-col>
-        <v-col
+      
+      <v-col
           cols="12"
           sm="6"
         >
@@ -68,29 +45,6 @@
             hint="Au moins 8 caractères"
             counter
             @click:append="show1 = !show1"
-          ></v-text-field>
-        </v-col>
-
-        <v-col
-          cols="12"
-          sm="6"
-        >
-          <v-text-field
-            v-model="tel"
-            label="Telephone"
-            outlined
-            shaped
-          ></v-text-field>
-        </v-col>
-        <v-col
-          cols="12"
-          sm="6"
-        >
-          <v-text-field
-            v-model="adresse"
-            label="pays"
-            outlined
-            shaped
           ></v-text-field>
         </v-col>
       </v-row>
