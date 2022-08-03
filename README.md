@@ -64,8 +64,13 @@ Ici nous avons le résultat avec la table article
 ![image](https://user-images.githubusercontent.com/81360602/182501393-8d21c8b9-341a-4428-b81a-007676487478.png)
 Ici nous avons le résultat avec la table transaction qui est en attente pour un paiement.
 
-#### CODE ASSOCIE
+##### CODE ASSOCIE
 ![image](https://user-images.githubusercontent.com/81360602/182501735-7651b167-1ab3-4e38-9009-9dc8f0da46be.png)
+
+#### DASHBOARD API
+![image](https://user-images.githubusercontent.com/81360602/182552121-58c091bf-f8d2-4e9f-998f-34adb6952636.png)
+
+Avec ce dashboard, l'utilisateur à la possibilité de créer un compte s'y connecter et d'effectuer des transactions. Il peut également choisir le mode d'affichage de l'interface à savoir Dark ou Light ce qui permet ainsi de faire une mise à jour des informations de l'utilisateur, permettra de définir des informations supplémentaires selon votre choix pour l’alimentation d’une possible table du nom de profil dans votre base de données.
 
 
 
