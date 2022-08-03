@@ -72,6 +72,12 @@ Ici nous avons le résultat avec la table transaction qui est en attente pour un
 
 Avec ce dashboard, l'utilisateur à la possibilité de créer un compte s'y connecter et d'effectuer des transactions. Il peut également choisir le mode d'affichage de l'interface à savoir Dark ou Light ce qui permet ainsi de faire une mise à jour des informations de l'utilisateur, permettra de définir des informations supplémentaires selon votre choix pour l’alimentation d’une possible table du nom de profil dans votre base de données.
 
+#### ETAPES CLES EN COURS
+##### Authentification API REST
+Ce point à ce jour est toujours en cours en effet, nous avons eu à tester l'authentification mais nous avons rencontré pas mal de difficultés. Notez que ce problème sera résolu.
+##### Les testes au niveau du dashboard
+Le point cité précedement s'avère etre un blocus pour la continuité des étapes du projet, n'ayez crainte ça sera réglé !
+
 
 
 
