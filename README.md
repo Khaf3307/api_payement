@@ -1,4 +1,6 @@
 # api_payement
+![api](https://user-images.githubusercontent.com/81360602/182561175-ac661e43-2550-44fa-b8f2-9804cf1b1990.PNG)
+
 #### INTRODUCTION
 Vous ne savez pas encore quelle solution choisir pour le paiement de votre e-commerce ? Il existe de nombreuses solutions plus ou moins adaptées à votre situation. En effet, pour démarrer, une plateforme e-commerce souhaitera limiter le coût de cette fonctionnalité pour privilégier son chiffre d’affaires. Plus elle grandit, plus cette plateforme aura besoin de fonctionnalités variées comme le paiement à l’international ou les factures automatisées.
 Des solutions simples d’utilisation, transparentes et polyvalentes, il y en a beaucoup. Au cœur de la problématique du paiement en ligne, on retrouve la sécurité, la fluidité et la simplicité. Nous vous proposons une API pour la gestion des paiements. Une API, ou interface de programmation d'application, est un ensemble de définitions et de protocoles qui facilite la création et l'intégration de logiciels d'applications.
@@ -64,8 +66,19 @@ Ici nous avons le résultat avec la table article
 ![image](https://user-images.githubusercontent.com/81360602/182501393-8d21c8b9-341a-4428-b81a-007676487478.png)
 Ici nous avons le résultat avec la table transaction qui est en attente pour un paiement.
 
-#### CODE ASSOCIE
+##### CODE ASSOCIE
 ![image](https://user-images.githubusercontent.com/81360602/182501735-7651b167-1ab3-4e38-9009-9dc8f0da46be.png)
+
+#### DASHBOARD API
+![image](https://user-images.githubusercontent.com/81360602/182552121-58c091bf-f8d2-4e9f-998f-34adb6952636.png)
+
+Avec ce dashboard, l'utilisateur à la possibilité de créer un compte s'y connecter et d'effectuer des transactions. Il peut également choisir le mode d'affichage de l'interface à savoir Dark ou Light ce qui permet ainsi de faire une mise à jour des informations de l'utilisateur, permettra de définir des informations supplémentaires selon votre choix pour l’alimentation d’une possible table du nom de profil dans votre base de données.
+
+#### ETAPES CLES EN COURS
+##### Authentification API REST
+Ce point à ce jour est toujours en cours en effet, nous avons eu à tester l'authentification mais nous avons rencontré pas mal de difficultés. Notez que ce problème sera résolu.
+##### Les testes au niveau du dashboard
+Le point cité précedement s'avère etre un blocus pour la continuité des étapes du projet, n'ayez crainte ça sera réglé !
 
 
 
