@@ -7,7 +7,7 @@
           cols="12"
           sm="10"
           >
-          <v-text-field
+        <v-text-field
             v-model="login"
             label="Login"
             outlined
