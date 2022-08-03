@@ -53,6 +53,23 @@ Ici nous remarquons qu'un profil par défaut est associé à l'utilisateur ce de
 
 ![image](https://user-images.githubusercontent.com/81360602/182481228-cbd8e758-9130-4b26-a80d-39bb968588b7.png)
 
+#####  	CREATE ARTICLES : méthode POST
+
+![image](https://user-images.githubusercontent.com/81360602/182501269-c23f4be9-9cf1-4f01-8c90-411348981ae9.png)
+
+##### RESULTATS
+![image](https://user-images.githubusercontent.com/81360602/182501340-06035596-bf13-4b69-b103-748dafb2a01c.png)
+Ici nous avons le résultat avec la table article
+
+![image](https://user-images.githubusercontent.com/81360602/182501393-8d21c8b9-341a-4428-b81a-007676487478.png)
+Ici nous avons le résultat avec la table transaction qui est en attente pour un paiement.
+
+#### CODE ASSOCIE
+![image](https://user-images.githubusercontent.com/81360602/182501735-7651b167-1ab3-4e38-9009-9dc8f0da46be.png)
+
+
+
+
 
 
 
