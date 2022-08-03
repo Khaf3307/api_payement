@@ -5,6 +5,9 @@
       <router-view></router-view>
       <div class="projects">
     <h1 class="subheading grey--text">Documentation</h1>
+    <p>
+      La documentation est en cours de construction et sera prêt sous peut pour de amples information sur l'utilisations de l'api se referer au README !
+    </p>
     
   </div>
     </v-content>
@@ -13,29 +16,7 @@
   
 </template>
 
-<script>
-// @ is an alias to /src
 
-export default {
-  name: 'projects',
-  components: {
-
-  },
-  data: () => ({
-    projects : [
-      {title: 'Site web ', person :'khaled', due: '10/10/1987', status:'no'},
-      {title: 'Application mobile', person :'Iyad', due: '02/07/1990', status:'complete'},
-      {title: 'Gestion de stock', person :'Zineb', due: '01/05/1987', status:'yes'},
-      {title: 'Conception', person :'Hu Java', due: '02/09/1991', status:'up'},
-    ]
-  }),
-  methods: {
-    sortBy(prop){
-      this.projects.sort((a,b) => a[prop] < b[prop] ? -1:1)
-    }
-  }
-}
-</script>
 <style >
   .project.complete {
       border-left: 4px solid #3cd1c2;

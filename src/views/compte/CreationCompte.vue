@@ -5,30 +5,7 @@
       <v-row>
         <v-col
           cols="12"
-          sm="6"
-        >
-          <v-text-field
-            v-model="first"
-            label="Nom"
-            outlined
-            shaped
-          ></v-text-field>
-        </v-col>
-
-        <v-col
-          cols="12"
-          sm="6"
-        >
-          <v-text-field
-            v-model="last"
-            label="Prenom"
-            outlined
-            shaped
-          ></v-text-field>
-        </v-col>
-        <v-col
-          cols="12"
-          sm="6"
+          sm="10"
         >
           <v-text-field
             v-model="login"
@@ -71,28 +48,6 @@
           ></v-text-field>
         </v-col>
 
-        <v-col
-          cols="12"
-          sm="6"
-        >
-          <v-text-field
-            v-model="tel"
-            label="Telephone"
-            outlined
-            shaped
-          ></v-text-field>
-        </v-col>
-        <v-col
-          cols="12"
-          sm="6"
-        >
-          <v-text-field
-            v-model="adresse"
-            label="pays"
-            outlined
-            shaped
-          ></v-text-field>
-        </v-col>
       </v-row>
     </v-container>
   </v-form>
