@@ -1,5 +1,5 @@
 # api_payement
-![api](https://user-images.githubusercontent.com/81360602/182561175-ac661e43-2550-44fa-b8f2-9804cf1b1990.PNG)
+![image](https://user-images.githubusercontent.com/81360602/182853122-986ac3f1-7db0-44bd-b58b-9493d9af0619.png)
 
 #### INTRODUCTION
 Vous ne savez pas encore quelle solution choisir pour le paiement de votre e-commerce ? Il existe de nombreuses solutions plus ou moins adaptées à votre situation. En effet, pour démarrer, une plateforme e-commerce souhaitera limiter le coût de cette fonctionnalité pour privilégier son chiffre d’affaires. Plus elle grandit, plus cette plateforme aura besoin de fonctionnalités variées comme le paiement à l’international ou les factures automatisées.
@@ -70,7 +70,7 @@ Ici nous avons le résultat avec la table transaction qui est en attente pour un
 ![image](https://user-images.githubusercontent.com/81360602/182501735-7651b167-1ab3-4e38-9009-9dc8f0da46be.png)
 
 #### DASHBOARD API
-![image](https://user-images.githubusercontent.com/81360602/182552121-58c091bf-f8d2-4e9f-998f-34adb6952636.png)
+![image](https://user-images.githubusercontent.com/81360602/182853350-34895e73-8531-416e-a786-ddcf24342314.png)
 
 Avec ce dashboard, l'utilisateur à la possibilité de créer un compte s'y connecter et d'effectuer des transactions. Il peut également choisir le mode d'affichage de l'interface à savoir Dark ou Light ce qui permet ainsi de faire une mise à jour des informations de l'utilisateur, permettra de définir des informations supplémentaires selon votre choix pour l’alimentation d’une possible table du nom de profil dans votre base de données.
 
