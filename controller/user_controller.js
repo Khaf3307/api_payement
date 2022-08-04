@@ -1,5 +1,6 @@
+require("dotenv").config();
 const db = require("../model");
-//const bcrypt = require("bcrypt");
+const bcrypt = require("bcrypt");
 const jwt = require('jsonwebtoken');
 //const dotenv = require('dotenv')
 
@@ -16,44 +17,35 @@ const create = (req, res,next) => {
       });
       return;
     }
-    // Create a user
-    // const salt = await bcrypt.genSalt(10);
-    // const user = {
-    //   login: req.body.login,
-    //   password: await bcrypt.hash(req.body.password, salt),
-    //   password_confirm: req.body.password_confirm
-    // };
-
-    const user = {
+    
+    const users = {
       login: req.body.login,
       password: req.body.password,
       password_confirm: req.body.password_confirm
     };
-    // if(req.body.password != req.body.confirm_password)
-    // {
-    //   res.status(400).send({
-    //     message: "Password not match!"
-    //   });
-    //   return;
-    // }
-    // else{
+    if(req.body.password_confirm !== req.body.password)
+    {
+      res.status(400).send({
+        message: "Password not match!"
+      });
+      //return;
+    }
+    else{
     // Save User and Account in the database
     // Email
     // TEST LOGIN IF EXIST
-    // User.findOne({
-    //   where: {
-    //     login: req.body.login
-    //   }
-    // }).then(user => {
-    //   if (user) {
-    //     res.status(400).send({
-    //       message: "Failed! Email is already in use!"
-    //     });
-    //     return;
-    //   }
-    //   next();
-    // })
-    User.create(user)
+    User.findOne({
+      where: {
+        login: req.body.login
+      }
+    }).then(user => {
+      if (user) {
+        res.status(400).send({
+          message: "Failed! Email is already in use!"
+        });
+        return;
+      }else{
+        User.create(users)
       .then((user)=>{ 
          Profil.create({
           firstname: "cherif",
@@ -79,6 +71,11 @@ const create = (req, res,next) => {
             err.message || "Some error occurred while creating the user."
         });
       });
+      }
+      //next();
+      
+    })
+    }
   };
 
   const findAll = (req, res) => {
@@ -162,19 +159,50 @@ const create = (req, res,next) => {
   };
 
   const auth = async(req,res,next)=>{
-    const user = await User.findOne({ where : {login : req.body.login }});
-    if(user){
-    //const password_valid = await compare(req.body.password,user.password);
-    if(req.body.password==user.password){
-        token = jwt.sign({ "id" : user.userid,"login" : user.login },process.env.SECRET);
-        res.status(200).json({ token : token });
-    } else {
-      res.status(400).json({ error : "Password Incorrect" });
-    }
+    User.findOne({
+      where: {
+        login: req.body.login
+      }
+    })
+      .then(user => {
+        if (!user) {
+          return res.status(401).json({
+            message:
+              "Auth failed!! either the account does't exist or you entered a wrong account"
+          });
+        }
+        bcrypt.compare(req.body.password, user.password, (err, result) => {
+          if (err) {
+            return res.status(401).json({
+              message: "Auth failed",
+              token: token
+            });
+          }
+          if (result) {
+            const token = jwt.sign(
+              {
+                login: user.login,
+                password: user.id
+              },
+              process.env.JWT_KEY,
+              {
+                expiresIn: "1h"
+              }
+            );
   
-    }else{
-      res.status(404).json({ error : "User does not exist" });
-    }
+            res.status(200).json({
+              message: "Auth granted, welcome!",
+              token: token
+            });
+          }
+        });
+      })
+      .catch(err => {
+        console.log(err);
+        res.status(500).json({
+          error: err
+        });
+      });
   };
 
   module.exports = {
