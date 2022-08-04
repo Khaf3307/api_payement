@@ -5,7 +5,7 @@
       <v-row>
         <v-col
           cols="12"
-          sm="10"
+          sm="12"
           >
         <v-text-field
             v-model="login"
@@ -47,7 +47,12 @@
             @click:append="show1 = !show1"
           ></v-text-field>
         </v-col>
+        
     </v-row>
+      <v-row >
+        <v-btn outlined color="red lighten-3" dark v-on="on">ANNULER</v-btn>
+        <v-btn outlined color="teal lighten-3" dark v-on="on">VALIDER</v-btn>
+      </v-row>
     </v-container>
   </v-form>
 </template>

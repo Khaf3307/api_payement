@@ -51,10 +51,15 @@
           sm="6"
         >
           <v-text-field
-            label="Telephone"
+            label="Type profil"
             readonly
           ></v-text-field>
         </v-col>
+        
+      </v-row>
+      <v-row >
+          <v-btn outlined color="red lighten-3" dark v-on="on">ANNULER</v-btn>
+          <v-btn outlined color="teal lighten-3" dark v-on="on">VALIDER</v-btn>
       </v-row>
     </v-container>
   </v-form>

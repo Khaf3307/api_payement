@@ -4,6 +4,7 @@ import Dashboard from '../views/Profile.vue'
 import Projects from '../views/Documentation.vue'
 import CreationCompte from '../views/compte/CreationCompte.vue'
 import Login from '../views/compte/Login.vue'
+import Team from '../views/Setting.vue'
 
 Vue.use(VueRouter)
 
@@ -12,6 +13,11 @@ const routes = [
     path: '/',
     name: 'dashboard',
     component: Dashboard
+  },
+  {
+    path: '/team',
+    name: 'team',
+    component: Team
   },
   {
     path: '/projects',
