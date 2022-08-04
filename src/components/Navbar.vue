@@ -24,9 +24,14 @@
       </v-list>
             </v-menu>
             <v-btn text>
+                <span>SANDBOX</span>
+                <v-icon right>exit_to_app</v-icon>
+             </v-btn>
+            <v-btn text>
                 <span>Exit</span>
                 <v-icon right>exit_to_app</v-icon>
              </v-btn>
+             
        </v-app-bar>
       <v-navigation-drawer  v-model="drawer" dark app class="blue darken-4">
           <v-layout column align-center>
@@ -57,9 +62,9 @@ export default {
       links :[
           {icon: 'dashboard', text:'Profil', route: '/'},
           {icon: 'folder', text:'Documentation', route: '/projects'},
-          {icon: 'person', text:'Settings', route: '/team'},
+          {icon: 'expand', text:'Settings', route: '/setting'},
           {icon: 'person', text:'Connexion', route: '/login'},
-          {icon: 'person', text:'Creer compte', route: '/compte'}
+          {icon: 'group', text:'Creer compte', route: '/compte'}
       ]
      
     }),
