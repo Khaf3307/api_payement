@@ -1,5 +1,5 @@
 Lien vers l'application
-NB: Comme spécifé dans le readme la connexion entre le backen et le frontend nous fait défaut.
+NB: Comme spécifé dans le readme la connexion entre le backend et le frontend nous fait défaut.
 Nous sommes à jour entrain de résoudre le problème. J'espere à la correction, le problème sera résolu.
 
 https://api-payement.herokuapp.com/
