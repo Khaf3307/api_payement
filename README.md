@@ -81,8 +81,8 @@ Ce point à ce jour est toujours en cours en effet, nous avons eu à tester l'au
 Le point cité précedement s'avère etre un blocus pour la continuité des étapes du projet, n'ayez crainte ça sera réglé !
 
 #### LINK VERS LE DASHBOARD
-[Dashboard de l'application](www.google.com)
-[click here](www.google.com)
+https://api-payement.herokuapp.com/ 
+
 
 
 
